@@ -1,13 +1,13 @@
 {% set name = "buildpy" %}
-{% set version = "6.2.4" %}
-{% set sha256 = "018443ed7dccf68572f97b31b06645b6d535281747f72edca38af9ed44c8f01f" %}
+{% set version = "6.2.5" %}
+{% set sha256 = "9dc473129eebaeb16835d60737fdfbe16139971e4b5d9311a7cf066d33ccdb92" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/a9/4d/c4a1a46a34fcd285d15d93d32f8daaf5c0f28a72adde156897dbd527a3b0/buildpy-6.2.4.tar.gz
+  url: https://files.pythonhosted.org/packages/b7/a5/f5f89344a2fda80942d8da5b74ce652dcfdf8ad5e91667378548b3264a1e/buildpy-6.2.5.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -17,12 +17,14 @@ build:
 
 requirements:
   host:
+    - boto3
     - google-cloud-bigquery
     - google-cloud-storage
     - pip
     - psutil
     - python
   run:
+    - boto3
     - google-cloud-bigquery
     - google-cloud-storage
     - psutil
