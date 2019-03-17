@@ -1,13 +1,13 @@
 {% set name = "buildpy" %}
-{% set version = "6.2.7" %}
-{% set sha256 = "065407ab970a1de768364a522c4b58bb649af317dfa513700c39951e94e3a09e" %}
+{% set version = "7.0.0" %}
+{% set sha256 = "67a29424fc4760082d12d71e325dedcc75a371e13722515fa03f4733f8793b77" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/a8/11/540fd377385660b08dde2d3a9c90e72abe29f90f475f96b379a0325a1463/buildpy-6.2.7.tar.gz
+  url: https://files.pythonhosted.org/packages/84/cc/5e0285491b283c9a2e6eca6193a8ec6f0894d238f751af9dd4fda266f887/buildpy-7.0.0.tar.gz
   sha256: {{ sha256 }}
 
 build:
